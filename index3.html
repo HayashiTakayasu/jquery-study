@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <style>
+      #myslider1, #myslider2 {
+        width: 300pt;
+        margin-bottom: 20pt;
+      }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui-i18n.min.js"></script>
+    <script src="js/sample.js"></script>
+  </head>
+  <body>
+    <h1>エアコン風量</h1>
+    <!-- div id="myslider1"></div-->
+    <div id="myslider2"></div>
+    <!--output id="result"></output-->
+  <form action="../cgi-bin/post_sample.cgi" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value=""/>
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name=mail value=""/>
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="result" name=result value="">
+        
+        </textarea>
+    </div>
+    
+    <div class="button">
+        <input type="submit">Send your message</button>
+    </div>
+</form>
+  </body>
+</html>
